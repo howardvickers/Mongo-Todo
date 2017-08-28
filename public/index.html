@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="titleDiv">
+            <h2>To-Do List</h2>
+        </div>
+        <div class="formDiv">
+            <form id="todo-form">
+                <input id="todo-input">
+                <button id="todo-button" class="btn icon-btn btn-sm btn-success"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Add New To-Do</button>
+            </form>
+        </div>
+        <div class="todoDiv">
+            <h2 id="noTodos"></h2></br>
+            <table class="table table-inverse">
+                 <tr>
+                    <th>
+                        Task
+                    </th>
+                    <th>
+                        Complete
+                    </th>
+                    <th>
+                        Delete
+                    </th>
+                </tr> 
+                <tbody id="todo-list">
+                 </tbody> 
+            </table>
+
+            <!-- <form id="del-form">
+                <input id="del-input">
+                <button id="del-button" class="btn icon-btn btn-sm btn-success"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Delete</button>
+            </form> -->
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="/todo.js"></script>
+    </body>
+</html>
